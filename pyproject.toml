@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pycoding-agent"
+version = "0.5.0"
+description = "A durable, streaming and multimodal Python coding agent with a local web UI"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "httpx>=0.27,<1",
+  "fastapi>=0.115,<1",
+  "uvicorn[standard]>=0.34,<1",
+  "pypdf>=5,<7",
+  "pillow>=10,<13",
+]
+
+[project.optional-dependencies]
+neural-rag = ["sentence-transformers>=3,<6"]
+
+[project.scripts]
+pycoding-agent = "pycoding_agent.cli:main"
+pycoding-agent-web = "pycoding_agent.web:main"
+
+[tool.setuptools.packages.find]
+include = ["pycoding_agent*"]
+
+[tool.setuptools.package-data]
+pycoding_agent = ["web_static/*", "learning/starter_content/*.md", "evaluation/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

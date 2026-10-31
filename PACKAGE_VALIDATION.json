@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-31",
+  "install": "uv sync --frozen --offline --no-dev, fresh isolated venv: passed",
+  "smoke_tests_passed": 5,
+  "smoke_tests_failed": 0,
+  "runtime_source_files_verified_unchanged": 71,
+  "secret_scan": "No matches for selected known credential/private-key patterns; not a universal guarantee",
+  "live_llm_called": false,
+  "web": "TestClient startup, root/health endpoints and starter course: passed",
+  "warning": "TestClient httpx deprecation warning; tests passed"
+}

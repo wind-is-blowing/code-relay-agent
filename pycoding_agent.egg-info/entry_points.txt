@@ -1,0 +1,3 @@
+[console_scripts]
+pycoding-agent = pycoding_agent.cli:main
+pycoding-agent-web = pycoding_agent.web:main

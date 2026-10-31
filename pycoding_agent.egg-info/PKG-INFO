@@ -1,0 +1,61 @@
+Metadata-Version: 2.4
+Name: pycoding-agent
+Version: 0.5.0
+Summary: A durable, streaming and multimodal Python coding agent with a local web UI
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: httpx<1,>=0.27
+Requires-Dist: fastapi<1,>=0.115
+Requires-Dist: uvicorn[standard]<1,>=0.34
+Requires-Dist: pypdf<7,>=5
+Requires-Dist: pillow<13,>=10
+Provides-Extra: neural-rag
+Requires-Dist: sentence-transformers<6,>=3; extra == "neural-rag"
+
+# 续码 CodeRelay · 本地小模型 Coding Agent
+
+面向本地小模型在有限上下文与调用预算下的多轮开发任务：读文件、修改代码、运行测试，并根据结果继续决策。
+基于 Python/asyncio 自行实现 ReAct 循环；运行代码仍使用 `pycoding_agent` 包名。
+
+## 重点设计
+
+- **预算内证据选择**：来源、文件版本、验证状态组成证据卡，约 700 个估算 Token 的证据视图配合只读展开。
+- **工具执行可靠性**：重复调用限制、文件版本前置校验、文件修改幂等记录、编辑诊断、原子替换及整文件覆盖保护。
+- **任务接续**：JSONL 树状会话、任务检查点、任务级记忆与按项目召回。
+- 保留 CLI、Web、附件、学习中心、搜索及 RAG 的运行实现。
+
+这是以本地 Qwen 验证的工程项目，模型适配层也支持兼容接口；不宣称小模型可替代所有大模型，也未完成模型微调。
+
+## 最短启动路径
+
+要求 Python 3.12+、uv，以及已部署的模型服务。在项目根目录执行：
+
+```powershell
+uv sync --frozen
+Copy-Item .env.example .env
+uv run --frozen python -m pycoding_agent.web --workspace "D:\your-project"
+```
+
+请先创建真实工作目录，并将示例路径改为自己的路径。只在 `.env` 不存在时复制；在 `.env` 中设置实际的模型标签和接口。
+示例配置沿用项目的本地 4B 模型；若部署了 `qwen3.5:9b`，将 `OPENAI_MODEL` 改为该标签。
+浏览器访问 `http://127.0.0.1:8765/`。模型权重和 Python 依赖不在源码包内。
+
+不调用真实模型的检查：
+
+```powershell
+uv run --frozen python -m unittest discover -s tests -v
+```
+
+详见 [启动与源码阅读说明](docs/QUICKSTART.md)、[评测口径](docs/EVALUATION.md)。
+
+## 评测范围
+
+- 历史冻结版本：SWE-bench Lite 固定 50 题抽样，Qwen3.5-9B、相同调用上限，本项目 17/50、mini-swe-agent 8/50。
+- 独立开发决策实验：10 类场景 × 2 种子，17/20 → 20/20，输入 Token 217,229 → 91,250。
+- 两个实验不是同一版本；不能把 SWE 成绩归因于后续证据模块。源码包是当前运行版本，不是上述 SWE 冻结版本。
+
+## 交付边界
+
+原项目的密钥、虚拟环境、用户会话、附件、模型、评测容器和大型评测产物未包含。
+本地 Shell 使用宿主权限，审批和路径检查不等于操作系统沙箱。任意 Shell 副作用不保证恰好执行一次。
+第三方前端许可证保留；本包未替作者新增开源许可证。发布和再分发需遵守原有授权。

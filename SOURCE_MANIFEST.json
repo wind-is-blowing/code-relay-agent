@@ -1,0 +1,341 @@
+{
+  "date": "2026-10-31",
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "87857fedd40e895808221a11fcefbcbd11d06be3c06ff70c6f96152db8bd1e67"
+    },
+    {
+      "path": ".env.qwen37.example",
+      "sha256": "a886783da0642ce410e290e5a406f04e366705ee4ce6c6ad8d93a11ab94fe279"
+    },
+    {
+      "path": ".github/workflows/smoke.yml",
+      "sha256": "3423f9624546f2079b49eaf8b85043beb69826cb9a49aab3ba129165087d192b"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "d9a04ecfd94600baa020bb9b3cb41e4336a3f9f819753b2fe4ec2f9c5126c881"
+    },
+    {
+      "path": "PACKAGE_VALIDATION.json",
+      "sha256": "2ea1ebdf7af56ea287252c9f6deb69e93ec35f762015d2361b67a94863e34ad4"
+    },
+    {
+      "path": "README.md",
+      "sha256": "ececcbf11f6fb2f335e92455574d139534e90712c0ac5826a211a3a3f29565d0"
+    },
+    {
+      "path": "docs/EVALUATION.md",
+      "sha256": "4ab65c07a38b331b923c1cfccde35331b613261002f5d06d4e42a233a51f2d86"
+    },
+    {
+      "path": "docs/INTERVIEW_NOTES.md",
+      "sha256": "d4b091eff5172875bb8cd031bc23d0e88364bd9dfd0175ba2f6493aec0e748e2"
+    },
+    {
+      "path": "docs/QUICKSTART.md",
+      "sha256": "2382d6259f00bd4de1e4f73ccf0519031ef4796518908572ffd371d3703f9392"
+    },
+    {
+      "path": "docs/lite50-results.csv",
+      "sha256": "7d154076e14e0b59c3986ce18481c932eaede7ce5d056d52f8143b4ee14cd86d"
+    },
+    {
+      "path": "pycoding_agent/__init__.py",
+      "sha256": "1f542aa02250d10fb12a4a4af3e6ef4684941c34767e53396cc98b09ed7c7639"
+    },
+    {
+      "path": "pycoding_agent/__main__.py",
+      "sha256": "d7815f9da17bcd8e79d1d47170e5795e29cc5837f97d1049664813068a9e563f"
+    },
+    {
+      "path": "pycoding_agent/cli.py",
+      "sha256": "d89555b4492493f54988062fef596055b7bd9c518015d6e00dcda8716ee9e1b2"
+    },
+    {
+      "path": "pycoding_agent/config.py",
+      "sha256": "84bdd73ede8fad7a008b334c18ec0f89c07396862f42aabcff618efa32847034"
+    },
+    {
+      "path": "pycoding_agent/domain/__init__.py",
+      "sha256": "7c237ccc110d5302ab8b0dc846103cf0bdb9d48e9c542e64bd1e62679d3cb155"
+    },
+    {
+      "path": "pycoding_agent/domain/events.py",
+      "sha256": "50f98fc30a5db78a46c274a242653ebd9920f1a02a6d6ac8431196f981d63f02"
+    },
+    {
+      "path": "pycoding_agent/domain/messages.py",
+      "sha256": "77f0645872b7a56c903c4c78214c76e2ab292fe18996576e7c7e2972406f72fc"
+    },
+    {
+      "path": "pycoding_agent/domain/models.py",
+      "sha256": "8701aaf5c94bc979124dbb931291f6000f211390dd0ea7a84054cdbd93744379"
+    },
+    {
+      "path": "pycoding_agent/domain/tools.py",
+      "sha256": "c43a1e92787e99a9ba3415a1fa6a4b42fc452cb4deb5ca37a7c0272510a6eab4"
+    },
+    {
+      "path": "pycoding_agent/learning/__init__.py",
+      "sha256": "1b523cb8cc42be3717f17866ac72533abc2b825fe1e48668031929d54c4a78ee"
+    },
+    {
+      "path": "pycoding_agent/learning/knowledge.py",
+      "sha256": "52c0abd2779355cb2b0461450d937848969a5b84569372ef29e6ecf7574c16ce"
+    },
+    {
+      "path": "pycoding_agent/learning/progress.py",
+      "sha256": "28ef6135fd93aedbe5380ffbcbf54f0ab06d2be63e9556299da964e6f0cfe11e"
+    },
+    {
+      "path": "pycoding_agent/learning/rag.py",
+      "sha256": "0e8b52b6ad71410008c5e896ea2551ca7ba40182d33f2553a4bff3493a3184ef"
+    },
+    {
+      "path": "pycoding_agent/learning/starter.py",
+      "sha256": "8ed69407ba2db718d2d9dfb16e58e08be7f4570e50dc6881c489653ed4090f55"
+    },
+    {
+      "path": "pycoding_agent/learning/starter_content/01-agent-foundations.md",
+      "sha256": "aad5f0b9411e252aee68326b852d0d4ed5d1f5be7ea1be9d23391139a1ca6410"
+    },
+    {
+      "path": "pycoding_agent/learning/starter_content/02-pi-source-architecture.md",
+      "sha256": "979c97216dae2891e34e3f09d9d27cb2cc9e90e351b402b1d8fb88f3bffd57a1"
+    },
+    {
+      "path": "pycoding_agent/learning/starter_content/03-context-cache-memory.md",
+      "sha256": "69cfbfc660e193913e1dcbdcc04e560e89702eb05e6d27bc573af7895436aa4b"
+    },
+    {
+      "path": "pycoding_agent/learning/starter_content/04-tool-safety.md",
+      "sha256": "5847aa1927b8054b94db95572e43ee26c6b83dbe59d1efba810f827009bc98ef"
+    },
+    {
+      "path": "pycoding_agent/learning/starter_content/05-agent-evaluation.md",
+      "sha256": "474e30c7c3fc752ff5adc3f0f32a04356d3fc392724beb1936672db89fb75e11"
+    },
+    {
+      "path": "pycoding_agent/learning/starter_content/06-python-coding-agent-guide.md",
+      "sha256": "6c9f2a13df698abc00124ef14ef00ab38844c3c3aa3109984d46a9f3b922bc02"
+    },
+    {
+      "path": "pycoding_agent/learning/tools.py",
+      "sha256": "13c174678ae5ac74b18790574141df3ffc367940021413f54b0b64462a312bbc"
+    },
+    {
+      "path": "pycoding_agent/providers/__init__.py",
+      "sha256": "9ddc06b96a7012414887a3e5c48f76d81643aedcabb2daf64368f482dd0632bc"
+    },
+    {
+      "path": "pycoding_agent/providers/base.py",
+      "sha256": "ef3f523e39a1c3714cecaef31b71fe7e8e07a4163447882076e63472f1a6c542"
+    },
+    {
+      "path": "pycoding_agent/providers/circuit_breaker.py",
+      "sha256": "29388c4236086a640119b69fea6c9fd6539eebb87c1fd49c26ef6cd5ce13c9dc"
+    },
+    {
+      "path": "pycoding_agent/providers/fake.py",
+      "sha256": "118dda46670f46bcbc0e72f2ebd9dacb98f6b1ad0860b7415b12d51ef7952aaa"
+    },
+    {
+      "path": "pycoding_agent/providers/openai_compatible.py",
+      "sha256": "0dbdc899bde426e08a46dbbcd180a1c0f8ab8ffc052ef51093120e70c779cfb9"
+    },
+    {
+      "path": "pycoding_agent/runtime/__init__.py",
+      "sha256": "c4d5f448805bfae485fb19fcccee75adbdff6b648a942d31ea69091dbee5d9d9"
+    },
+    {
+      "path": "pycoding_agent/runtime/agent.py",
+      "sha256": "fb202a1a3909865fd325a91fa647e7ec9014b322c545d1990d3600b2810f52b1"
+    },
+    {
+      "path": "pycoding_agent/runtime/attachments.py",
+      "sha256": "ea9afeafa177c85c377d9bcd2f365713b5b4b930265030a3936467371dcae811"
+    },
+    {
+      "path": "pycoding_agent/runtime/cache.py",
+      "sha256": "7288568e8708b80bb88c0d3a64deb792cfea4df68711964e2ee254bf42d3279d"
+    },
+    {
+      "path": "pycoding_agent/runtime/circuit_breaker.py",
+      "sha256": "57b010615f8174624f13764eb665fbc0903cc140b0ec82cbd5a182c3abfe141e"
+    },
+    {
+      "path": "pycoding_agent/runtime/coding_evidence.py",
+      "sha256": "e3725699192e57e8cf8f953cde9dbf85a0f455241edeba91a38dcf929dd2c7a8"
+    },
+    {
+      "path": "pycoding_agent/runtime/compaction.py",
+      "sha256": "06b4859fc1cb0601167d333cc1a910562ade034b5b6b8d499e01e39f2ae9eaae"
+    },
+    {
+      "path": "pycoding_agent/runtime/context.py",
+      "sha256": "ceb8f3f30cf6b72ed7e13fe33ba2deb42c2a843e599107166c2d789fe67391d2"
+    },
+    {
+      "path": "pycoding_agent/runtime/environment.py",
+      "sha256": "45b1bcf233795fd2266fd61810793287c10d9faeeefecb92e4774aa6618f1c53"
+    },
+    {
+      "path": "pycoding_agent/runtime/evidence_context.py",
+      "sha256": "6318ebe17b184a79790f81b801d3d6b374e97f5e5ae776d47805572ba3c71bba"
+    },
+    {
+      "path": "pycoding_agent/runtime/executor.py",
+      "sha256": "e1cd0b0b6a5cf2eff374503ea128ae1889267608de056c356f2eeec0b5c9560c"
+    },
+    {
+      "path": "pycoding_agent/runtime/extensions.py",
+      "sha256": "fc06f7c901c01164a95413cc8ef2ef257cbdf7ecb9cd3292c434eb5733f72a32"
+    },
+    {
+      "path": "pycoding_agent/runtime/hooks.py",
+      "sha256": "2bb5b11812a452eb601174a9cc2dee06cf7e89a4beb41e612f77b966133d2cf2"
+    },
+    {
+      "path": "pycoding_agent/runtime/loop.py",
+      "sha256": "c63d23162531d3d2f522041bc7f5cb81df1a191ca83ba4019c69d13db36b0918"
+    },
+    {
+      "path": "pycoding_agent/runtime/memory.py",
+      "sha256": "3bbe970c074885e4c4e37186e10ed5e80d38049a16bf3fc2bc947754b05062e9"
+    },
+    {
+      "path": "pycoding_agent/runtime/patch_review.py",
+      "sha256": "178dfaaa7ad267d9cbc3b565175f662775fee37395c15259bab8cff706480613"
+    },
+    {
+      "path": "pycoding_agent/runtime/resources.py",
+      "sha256": "9c70231b29e306f438bc33a573781bcc70391cc26c32544b4649c3dd9d1b4740"
+    },
+    {
+      "path": "pycoding_agent/runtime/security.py",
+      "sha256": "bae1b6f7362ff5be4f57d299c1c9ebd733b63e43f721ffc05ff058939c76b847"
+    },
+    {
+      "path": "pycoding_agent/runtime/session.py",
+      "sha256": "41d08be5f13e80be09db53de7583253e0a1787553cdcdc2b34a00099d1ded95d"
+    },
+    {
+      "path": "pycoding_agent/runtime/source_anchors.py",
+      "sha256": "984cfffaf3a1df7f2457fcd023d0c7fd695c62d991ec987448925300d6b50900"
+    },
+    {
+      "path": "pycoding_agent/runtime/task_state.py",
+      "sha256": "d38af288e5d7641ae1a2423d7c272a393f9a4475f6b72146e2bdf71ed7ac5c52"
+    },
+    {
+      "path": "pycoding_agent/runtime/telemetry.py",
+      "sha256": "7ee5eed35e08f11f637e3b61578fef19ff3718039b93183fd3d9199c2f5a2255"
+    },
+    {
+      "path": "pycoding_agent/runtime/tool_outputs.py",
+      "sha256": "dfd3b4e02171e88d17a8d6eda8adf5870397cdfd9844dd2e1cab075d0dd0d179"
+    },
+    {
+      "path": "pycoding_agent/runtime/worktree.py",
+      "sha256": "5ae962d15fbddd01a11888318186da94b7fb3afcddee3c674af0c838c0f3725f"
+    },
+    {
+      "path": "pycoding_agent/tools/__init__.py",
+      "sha256": "eb6ecdd7a8404fcdbe17926e482b3eb1f8547059ba2c3f4e2a44edbf96e160b5"
+    },
+    {
+      "path": "pycoding_agent/tools/academic_search.py",
+      "sha256": "838da98c712347e6412759632582141fa5fef53fa442722506d446bf91fb6464"
+    },
+    {
+      "path": "pycoding_agent/tools/change_safety.py",
+      "sha256": "2baf48655d4be029fe6992fd9e2d879a30a141b00ef168ecf1d6a0ddcedd953d"
+    },
+    {
+      "path": "pycoding_agent/tools/edit.py",
+      "sha256": "fa6d2913818a92cd652fdfe84cf3a3f89f119849faa222bb1d0735f60911c70d"
+    },
+    {
+      "path": "pycoding_agent/tools/fs_utils.py",
+      "sha256": "7674c8eb1aa58d5ee46f8fe9af8e30d66ded11c31f38d953cbeb3133b27d5dda"
+    },
+    {
+      "path": "pycoding_agent/tools/idempotency.py",
+      "sha256": "74931109e7fe030e5230aa18c72e217af6937b13c7997ea2097ffb590d22cc85"
+    },
+    {
+      "path": "pycoding_agent/tools/path_policy.py",
+      "sha256": "c2c4eceaa67135fdf0e3508a382c0143eb4557a05dcb1ce1a867baf143dd6bdc"
+    },
+    {
+      "path": "pycoding_agent/tools/read.py",
+      "sha256": "5388d3cfdc407e440539e4715117ab1a10aa0895628521f9552fe685b05638e8"
+    },
+    {
+      "path": "pycoding_agent/tools/registry.py",
+      "sha256": "5b801a10a9eba3874cf51fa2e109a0ca1ed83c18f7bcb9965c367fc6e3274d07"
+    },
+    {
+      "path": "pycoding_agent/tools/shell.py",
+      "sha256": "8ee95d1781a524d360cdbfb59bc6b2bacd2b6843220b99b263944fe14bcc3f92"
+    },
+    {
+      "path": "pycoding_agent/tools/tool_output.py",
+      "sha256": "11758a36d3fcd1bf2cb3a58a96e31dc5649e9853c8816029873cb49f3a2a1937"
+    },
+    {
+      "path": "pycoding_agent/tools/web_search.py",
+      "sha256": "474f71cba775b252a8aa03f1080de05aa9f600371d1517ff70f2da4844683aaa"
+    },
+    {
+      "path": "pycoding_agent/tools/write.py",
+      "sha256": "5cfff785617106fe1e75da42fd56a09cc47a17d5334bc303955a8b99b981e0bb"
+    },
+    {
+      "path": "pycoding_agent/web.py",
+      "sha256": "2f8ef52d60bcb41128a40ba379075b893b5d0f36c46b8a86131c3b9457af6dd4"
+    },
+    {
+      "path": "pycoding_agent/web_static/app.js",
+      "sha256": "f91da885db7244843de5e0040e7fde5d671f9827590edaac3dfef4f49d76bcc6"
+    },
+    {
+      "path": "pycoding_agent/web_static/dompurify-3.4.16.min.js",
+      "sha256": "2c90a9b46d6463f26038a29b686e82bc91de01fdac9d5229e7cfe3b360134ea2"
+    },
+    {
+      "path": "pycoding_agent/web_static/dompurify-LICENSE.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "pycoding_agent/web_static/index.html",
+      "sha256": "c25f9a4dda9ef4279b41db6b1032af89f8ea10acef292699e6399fd96f16d367"
+    },
+    {
+      "path": "pycoding_agent/web_static/marked-18.0.14.umd.js",
+      "sha256": "21568877a938d2c4e7d74e27f18e60da96bb73a68809610ca39216e1efebae62"
+    },
+    {
+      "path": "pycoding_agent/web_static/marked-LICENSE.txt",
+      "sha256": "8e3a3f82f59a60958f56ca08f445647c32a4733dc7ca6c2c46f6eb898471ab9c"
+    },
+    {
+      "path": "pycoding_agent/web_static/styles.css",
+      "sha256": "eddea171ef8a547c34232f3b28ca299cda0fbe68b2505127662ca53e56124cb7"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "8930ac7bf3bd8e200e3af2dfc649b515905262d9f2445f0162380fa50e7902b1"
+    },
+    {
+      "path": "tests/test_smoke.py",
+      "sha256": "0e1f0e031ac95bafe39d72c4b5cfd7c9183f37eac92edbb02108fc464a840b14"
+    },
+    {
+      "path": "uv.lock",
+      "sha256": "681b5af40dc07b1bb36e667328e631842ad6dd20c9936abd9f584ed033410840"
+    }
+  ]
+}

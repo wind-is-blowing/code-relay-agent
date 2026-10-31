@@ -1,0 +1,8 @@
+httpx<1,>=0.27
+fastapi<1,>=0.115
+uvicorn[standard]<1,>=0.34
+pypdf<7,>=5
+pillow<13,>=10
+
+[neural-rag]
+sentence-transformers<6,>=3
